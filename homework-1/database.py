@@ -17,7 +17,7 @@ class PostgresDatabase:
         connection: соединение с базой данных (по умолчанию None)
     """
 
-    def __init__(self, dbname: str, user: str, password: str, host: str, port: str) -> None:
+    def __init__(self, dbname: str, user: str, password: str, host: str, port: int = 5432) -> None:
         self.dbname = dbname
         self.user = user
         self.password = password

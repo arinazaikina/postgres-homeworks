@@ -7,7 +7,7 @@ from logger import logger
 from utils import fill_table
 
 if __name__ == '__main__':
-    db = PostgresDatabase(dbname='north', user='postgres', password='0000', host='localhost', port='5432')
+    db = PostgresDatabase(dbname='north', user='postgres', password='0000', host='localhost')
 
     try:
         db.connect()
